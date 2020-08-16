@@ -1,0 +1,31 @@
+$color-black: #000;
+$color-grey-dark:#777;
+$color-grey:hsl(0, 0%, 78%);
+$color-grey-light: #f1f1f1;
+$color-grey-light-1: rgb(243, 241, 241)f1;
+$color-black: #000;
+$color-white: #fff;
+
+*{
+	padding: 0;
+	border: 0;
+	box-sizing: inherit;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+	box-sizing: inherit;
+    font-size: 65%;
+    text-rendering: optimizeLegibility;  
+	padding: 0;
+	border: 0;
+}
+body{
+    font-weight: 400;
+    color: $color-grey-dark;
+    font-family: 'Open sans' ,sans-serif;
+    line-height: 1.6;
+}
