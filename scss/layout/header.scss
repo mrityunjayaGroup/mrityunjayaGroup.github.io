@@ -1,0 +1,47 @@
+header{
+    background-color: rgba(0, 0, 0, 0.267);
+    color: white;    
+}
+.head-list{
+    margin-left: 30rem;
+    position: relative;
+    button{
+        color: white;
+        font-size: 1.3rem;
+        &:hover{
+            border: 2px solid #fff;
+        }
+    }
+    li{
+        margin: 0 1rem; 
+    }
+}
+.heading-main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    h1{
+        font-size: 6rem;
+        font-style: italic;
+        padding: 1rem 0;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 22%;
+            bottom: 0;
+            width: 20rem;
+            height: 2px;
+            background-color: #777;
+            display: inline-block;
+            transition: all .3s;
+
+        }
+        &:hover{
+            &::after{
+                width: 25rem;
+                left: 12%;
+            }
+        }
+    }
+}
