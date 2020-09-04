@@ -1,0 +1,50 @@
+.iconto-top{
+    position: fixed;
+    height: 4rem;
+    width: 4rem;
+    bottom: 9%;
+    z-index: 1000;
+    border-radius: 50%;
+    left: 10%;
+    cursor: pointer;
+    background-color: green;
+    &:hover{
+        border: 1px solid #000;
+    }
+}
+.icon-arrow_upward{
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem;
+
+    fill: white;
+}
+.icon-facebook,
+.icon-twitter,
+.icon-youtube,
+.icon-instagram{
+    height: 2rem;
+    width: 3rem;
+}
+.facebook,
+.twitter,
+.youtube,
+.instagram{
+    fill: white;
+    transition: all .2s;
+}
+.facebook:hover{
+    background-image: linear-gradient(120deg,#3B5998,#fff);
+}
+.instagram:hover{
+    background-image: linear-gradient(45deg,#405DE6,#5851DB,#833AB4,#c13584,#E1306C,#FD1D1D);
+}
+.twitter:hover{
+    background-image: linear-gradient(45deg, #66757f,#00ACEE, #36D8FF, #f5f8fa, #ffffff);
+}
+.youtube:hover{
+    background-image: linear-gradient(120deg, #ff0000, #282828);
+    .icon-youtube{
+        fill: #000;
+    }
+}

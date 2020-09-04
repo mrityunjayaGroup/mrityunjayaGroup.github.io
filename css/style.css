@@ -7187,7 +7187,19 @@ body {
 .contain {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: max-content 50vw max-content; }
+  grid-template-rows: max-content 50vw 40vw max-content; }
+
+.heading-primary {
+  text-align: center;
+  font-size: 4rem;
+  text-transform: capitalize;
+  backface-visibility: hidden;
+  text-decoration: bold;
+  margin-bottom: 1.5rem; }
+
+.paragraph {
+  text-align: center;
+  font-size: 2rem; }
 
 header {
   background-color: rgba(0, 0, 0, 0.267);
@@ -7227,6 +7239,57 @@ header {
       width: 25rem;
       left: 12%; }
 
+.iconto-top {
+  position: fixed;
+  height: 4rem;
+  width: 4rem;
+  bottom: 9%;
+  z-index: 1000;
+  border-radius: 50%;
+  left: 10%;
+  cursor: pointer;
+  background-color: green; }
+  .iconto-top:hover {
+    border: 1px solid #000; }
+
+.icon-arrow_upward {
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem;
+  fill: white; }
+
+.icon-facebook,
+.icon-twitter,
+.icon-youtube,
+.icon-instagram {
+  height: 2rem;
+  width: 3rem; }
+
+.facebook,
+.twitter,
+.youtube,
+.instagram {
+  fill: white;
+  transition: all .2s; }
+
+.facebook:hover {
+  background-image: linear-gradient(120deg, #3B5998, #fff); }
+
+.instagram:hover {
+  background-image: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #c13584, #E1306C, #FD1D1D); }
+
+.twitter:hover {
+  background-image: linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa, #ffffff); }
+
+.youtube:hover {
+  background-image: linear-gradient(120deg, #ff0000, #282828); }
+  .youtube:hover .icon-youtube {
+    fill: #000; }
+
+#logo {
+  height: 5rem;
+  padding: .7rem; }
+
 header {
   grid-row: 1 / 2;
   grid-column: 1 / -1;
@@ -7239,6 +7302,19 @@ header {
   position: relative; }
 
 .footer {
+  grid-row: 4 / 5;
+  grid-column: 1 / -1; }
+
+.section-fixed {
+  position: fixed;
+  background-color: green;
+  top: 50%;
+  right: 0%;
+  transform: translate(0, -50%);
+  display: grid;
+  z-index: 1000; }
+
+.section-about {
   grid-row: 3 / 4;
   grid-column: 1 / -1; }
 
@@ -7247,3 +7323,6 @@ header {
 
 .dropdown:hover .dropdown-menu {
   display: block !important; }
+
+.dropdown-menu {
+  font-size: 1.3rem; }
