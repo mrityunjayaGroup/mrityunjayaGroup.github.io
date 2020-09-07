@@ -7188,7 +7188,7 @@ body {
 .contain {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: max-content 50vw 40vw max-content max-content max-content max-content max-content; }
+  grid-template-rows: max-content 50vw max-content max-content max-content max-content max-content max-content; }
 
 .heading-primary {
   text-align: center;
@@ -7206,15 +7206,17 @@ body {
 
 .paragraph {
   text-align: center;
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 header {
-  background-color: rgba(0, 0, 0, 0.267);
+  background-color: rgba(255, 255, 255, 0.267);
   color: white; }
 
 .head-list {
-  margin-left: 30rem;
-  position: relative; }
+  margin-left: 10rem;
+  position: relative;
+  margin-top: .5rem;
+  margin-bottom: -.5rem; }
   .head-list button {
     color: white;
     font-size: 1.3rem; }
@@ -7297,6 +7299,15 @@ header {
   height: 5rem;
   padding: .7rem; }
 
+.btn-read {
+  text-decoration: underline;
+  font-size: 1.3rem;
+  margin-left: 35vw;
+  padding: 8px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-decoration: none; }
+
 header {
   grid-row: 1 / 2;
   grid-column: 1 / -1;
@@ -7304,6 +7315,9 @@ header {
   z-index: 100; }
 
 .section-main {
+  background-image: url(./img,svg/nomita2.png);
+  background-size: cover;
+  background-position: center;
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   position: relative; }
@@ -7323,7 +7337,8 @@ header {
 
 .section-about {
   grid-row: 3 / 4;
-  grid-column: 1 / -1; }
+  grid-column: 2 / 10;
+  margin: 5rem 0 10rem; }
 
 .section-joinUs {
   grid-row: 4 / 5;
@@ -7342,10 +7357,8 @@ header {
 .dropdown-menu {
   font-size: 1.3rem; }
 
-.head-list {
-  margin-top: .5rem;
-  margin-bottom: -.5rem; }
-
 #email {
   border-bottom: 1px solid #000;
   width: 30rem; }
+  #email:hover {
+    border-bottom: 2px solid #000; }
