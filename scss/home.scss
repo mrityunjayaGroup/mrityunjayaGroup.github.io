@@ -12,7 +12,7 @@ header{
 
 }
 .footer{
-	grid-row: 4 / 5;
+	grid-row: 6 / 7;
 	grid-column: 1 / -1;
 
 }
@@ -28,4 +28,12 @@ header{
 .section-about{
 	grid-row: 3 / 4;
 	grid-column: 1 / -1;
+}
+.section-joinUs{
+	grid-row: 4 / 5;
+	grid-column: 1 / -1;
+}
+.section-update{
+	grid-row: 5 / 6;
+	grid-column: 2 / 9;
 }

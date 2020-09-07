@@ -25,6 +25,7 @@ html{
 }
 body{
     font-weight: 400;
+    background-color: #f1f1f1;
     color: $color-grey-dark;
     font-family: 'Open sans' ,sans-serif;
     line-height: 1.6;
@@ -34,5 +35,5 @@ body{
     grid-template-columns: [full-start]  minmax(6rem,1fr)
     [center-start] repeat(8,[col-start] minmax(min-content, 12rem)[col-end]) [center-end] 
     minmax(6rem,1fr) [full-end];
-    grid-template-rows: max-content 50vw 40vw max-content;
+    grid-template-rows: max-content 50vw 40vw max-content max-content max-content max-content max-content;
 }

@@ -7180,6 +7180,7 @@ html {
 
 body {
   font-weight: 400;
+  background-color: #f1f1f1;
   color: #777;
   font-family: 'Open sans' ,sans-serif;
   line-height: 1.6; }
@@ -7187,7 +7188,7 @@ body {
 .contain {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: max-content 50vw 40vw max-content; }
+  grid-template-rows: max-content 50vw 40vw max-content max-content max-content max-content max-content; }
 
 .heading-primary {
   text-align: center;
@@ -7196,6 +7197,12 @@ body {
   backface-visibility: hidden;
   text-decoration: bold;
   margin-bottom: 1.5rem; }
+
+.heading-Secoundry {
+  font-size: 2rem;
+  font-weight: 500;
+  display: inline-block;
+  transition: all .2s; }
 
 .paragraph {
   text-align: center;
@@ -7243,7 +7250,7 @@ header {
   position: fixed;
   height: 4rem;
   width: 4rem;
-  bottom: 9%;
+  bottom: 5%;
   z-index: 1000;
   border-radius: 50%;
   left: 10%;
@@ -7302,7 +7309,7 @@ header {
   position: relative; }
 
 .footer {
-  grid-row: 4 / 5;
+  grid-row: 6 / 7;
   grid-column: 1 / -1; }
 
 .section-fixed {
@@ -7318,6 +7325,14 @@ header {
   grid-row: 3 / 4;
   grid-column: 1 / -1; }
 
+.section-joinUs {
+  grid-row: 4 / 5;
+  grid-column: 1 / -1; }
+
+.section-update {
+  grid-row: 5 / 6;
+  grid-column: 2 / 9; }
+
 .font-m {
   font-size: 1.3rem; }
 
@@ -7326,3 +7341,11 @@ header {
 
 .dropdown-menu {
   font-size: 1.3rem; }
+
+.head-list {
+  margin-top: .5rem;
+  margin-bottom: -.5rem; }
+
+#email {
+  border-bottom: 1px solid #000;
+  width: 30rem; }
