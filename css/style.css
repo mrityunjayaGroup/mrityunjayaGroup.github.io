@@ -7257,9 +7257,10 @@ header {
   border-radius: 50%;
   left: 10%;
   cursor: pointer;
-  background-color: green; }
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); }
   .iconto-top:hover {
-    border: 1px solid #000; }
+    border: 2px solid #342abd; }
 
 .icon-arrow_upward {
   height: 2rem;
@@ -7328,7 +7329,7 @@ header {
 
 .section-fixed {
   position: fixed;
-  background-color: green;
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
   top: 50%;
   right: 0%;
   transform: translate(0, -50%);
