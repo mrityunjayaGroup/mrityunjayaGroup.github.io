@@ -12,6 +12,8 @@ header{
 	grid-row: 2 / 3;
 	grid-column: 1 / -1;
 	position: relative;
+	height: 45vw;  
+
 }
 .footer{
 	grid-row: 6 / 7;
@@ -31,12 +33,21 @@ header{
 	grid-row: 3 / 4;
 	grid-column: 2 / 10;
 	margin: 5rem 0 10rem;
-
 }
-.section-joinUs{
+.section-vision{
+	grid-row: 3 / 4;
+	grid-column: 2 / -2;
+}
+.section-joinUs
+{
 	grid-row: 4 / 5;
 	grid-column: 1 / -1;
 }
+.section-mission{
+	grid-row: 4 / 5;	
+	grid-column: 2 / -2;
+}
+
 .section-update{
 	grid-row: 5 / 6;
 	grid-column: 2 / 9;

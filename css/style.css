@@ -7188,7 +7188,7 @@ body {
 .contain {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: 7rem 45vw max-content max-content max-content max-content max-content max-content; }
+  grid-template-rows: 7rem max-content max-content max-content max-content max-content max-content max-content; }
 
 .heading-primary {
   text-align: center;
@@ -7326,7 +7326,8 @@ header {
   background-position: center;
   grid-row: 2 / 3;
   grid-column: 1 / -1;
-  position: relative; }
+  position: relative;
+  height: 45vw; }
 
 .footer {
   grid-row: 6 / 7;
@@ -7346,9 +7347,17 @@ header {
   grid-column: 2 / 10;
   margin: 5rem 0 10rem; }
 
+.section-vision {
+  grid-row: 3 / 4;
+  grid-column: 2 / -2; }
+
 .section-joinUs {
   grid-row: 4 / 5;
   grid-column: 1 / -1; }
+
+.section-mission {
+  grid-row: 4 / 5;
+  grid-column: 2 / -2; }
 
 .section-update {
   grid-row: 5 / 6;
