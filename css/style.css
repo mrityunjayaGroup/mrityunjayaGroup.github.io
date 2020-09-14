@@ -7208,6 +7208,12 @@ body {
   text-align: center;
   font-size: 1.5rem; }
 
+.paragraph-1 {
+  text-align: center;
+  font-size: 1.5rem; }
+  .paragraph-1:span {
+    padding: 7px 0; }
+
 header {
   background-color: rgba(46, 46, 46, 0.623);
   color: white; }
