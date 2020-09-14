@@ -7188,7 +7188,7 @@ body {
 .contain {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: max-content 45vw max-content max-content max-content max-content max-content max-content; }
+  grid-template-rows: 7rem 45vw max-content max-content max-content max-content max-content max-content; }
 
 .heading-primary {
   text-align: center;
@@ -7209,7 +7209,7 @@ body {
   font-size: 1.5rem; }
 
 header {
-  background-color: rgba(255, 255, 255, 0.267);
+  background-color: rgba(46, 46, 46, 0.623);
   color: white; }
 
 .head-list {
@@ -7217,10 +7217,12 @@ header {
   position: relative;
   margin-top: .5rem;
   margin-bottom: -.5rem; }
-  .head-list button {
+  .head-list button,
+  .head-list .about-btn {
     color: white;
     font-size: 1.3rem; }
-    .head-list button:hover {
+    .head-list button:hover,
+    .head-list .about-btn:hover {
       border: 2px solid #fff; }
   .head-list li {
     margin: 0 1rem; }
@@ -7351,6 +7353,10 @@ header {
 .section-update {
   grid-row: 5 / 6;
   grid-column: 2 / 9; }
+
+.section-intro {
+  grid-row: 2 / 3;
+  grid-column: 2 / -2; }
 
 .font-m {
   font-size: 1.3rem; }
