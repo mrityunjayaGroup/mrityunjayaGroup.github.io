@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+<section class="section-main-blogs">
+    <h1 class="heading-primary">Blogs</h1>
+
+    <% campground.forEach(function(campgrounds){ %>
+        <div class="blog-box d-inline-block p-2 w-100">
+            <div class="w-30 float-left pt-1 pl-1">
+                <img src="<%= campgrounds.image %>" alt="" class="w-100">
+            </div>
+            <div class="float-right w-65 py-2" >
+                <div class=" ml-5 pb-2 font-s">
+                    <span class=""><%= campgrounds.created.toDateString() %></span>
+                </div>
+                <div class="  border border-left-0 border-right-0 border-top-0  pb-2 ">
+                    <a class="font-m mt-3" href="/campground/<%= campgrounds._id %>">
+                    <h2 class="pl-4 heading-Secoundry-2 text-left"><%= campgrounds.name %></h2></a><br> 
+                    <p class="font-m pl-4 py-1 para-small"><%=campgrounds.description%></p>       
+                </div>
+                <div class="font-m pl-4">
+                    <a href="#" class="btn-comment">Write a comment</a>
+                </div>
+            </div>
+        </div>
+    <%  }) %>
+</section>
+
+
+<%- include('partials/footer') %>

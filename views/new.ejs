@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+<section class="section-new-post">
+    <form class="new-post" method="POST" action="/campground">
+        <h1 class="heading-primary">Add for Blog</h1>
+
+        <input type="text" style="margin: 0.5rem 0;" placeholder="name" name="name">
+        <input type="text"  style="margin: 0.5rem 0;" placeholder="image url" name="image">
+        <textarea type="text" style=" width:34rem; height:10rem; margin: 0.5rem 0;" placeholder="description" name="description"></textarea>
+    <div class=" d-inline-block">
+        <button class="submit">Submit!</button>
+        <a class="back" href="/campground">back</a>
+    </div>
+        
+
+    </form>
+    
+</section>
+
+<%- include('partials/footer') %>
