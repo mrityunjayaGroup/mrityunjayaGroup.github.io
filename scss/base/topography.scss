@@ -23,3 +23,21 @@
         padding: 7px 0;
     }
 }
+
+.heading-Secoundry-2{
+    font-size: 2.2rem;
+	font-weight: 500;
+	display: inline-block;
+    transition: all .4s;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right,#7ed56f, #28b384);
+    -webkit-background-clip: text;
+    color: transparent;
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+    }
+}
+.para-small{
+    height: 7rem;
+    overflow: hidden;
+}

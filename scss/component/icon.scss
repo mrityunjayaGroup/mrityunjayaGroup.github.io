@@ -51,3 +51,42 @@
         fill: #000;
     }
 }
+
+.icon-facebook-1,
+.icon-twitter-1,
+.icon-youtube-1,
+.icon-instagram-1,
+.icon-dehaze{
+    height: 2rem;
+    width: 3rem;
+    fill: #000;
+}
+.heart{
+    background-color: #fff;
+    position: relative;
+    outline: #fff;
+}
+
+.icon-heart-filled{
+    fill: transparent;
+    height: 2rem;
+    width: 3rem;
+    stroke: #e84a43;
+    stroke-width: 1.5px;
+    transition: fill .25s;
+}
+.facebook:hover .icon-facebook{
+    fill: #4464a3;
+}
+.twitter:hover .icon-twitter{
+    fill: #55acee;
+}
+.instagram:hover .icon-instagram{
+    fill: #833AB4;
+}
+#check-heart{
+    display: none;
+    &:checked + .heart .icon-heart-filled{
+        fill: #e84a43;
+    }
+}

@@ -7214,6 +7214,22 @@ body {
   .paragraph-1:span {
     padding: 7px 0; }
 
+.heading-Secoundry-2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  display: inline-block;
+  transition: all .4s;
+  text-transform: capitalize;
+  background-image: linear-gradient(to right, #7ed56f, #28b384);
+  -webkit-background-clip: text;
+  color: transparent; }
+  .heading-Secoundry-2:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1); }
+
+.para-small {
+  height: 7rem;
+  overflow: hidden; }
+
 header {
   background-color: rgba(46, 46, 46, 0.623);
   color: white; }
@@ -7304,9 +7320,117 @@ header {
   .youtube:hover .icon-youtube {
     fill: #000; }
 
+.icon-facebook-1,
+.icon-twitter-1,
+.icon-youtube-1,
+.icon-instagram-1,
+.icon-dehaze {
+  height: 2rem;
+  width: 3rem;
+  fill: #000; }
+
+.heart {
+  background-color: #fff;
+  position: relative;
+  outline: #fff; }
+
+.icon-heart-filled {
+  fill: transparent;
+  height: 2rem;
+  width: 3rem;
+  stroke: #e84a43;
+  stroke-width: 1.5px;
+  transition: fill .25s; }
+
+.facebook:hover .icon-facebook {
+  fill: #4464a3; }
+
+.twitter:hover .icon-twitter {
+  fill: #55acee; }
+
+.instagram:hover .icon-instagram {
+  fill: #833AB4; }
+
+#check-heart {
+  display: none; }
+  #check-heart:checked + .heart .icon-heart-filled {
+    fill: #e84a43; }
+
 #logo {
   height: 5rem;
   padding: .7rem; }
+
+form h2 {
+  font-size: 2.4em;
+  font-weight: 900;
+  margin-bottom: 40px; }
+
+form {
+  width: 36rem;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #d8d8d8; }
+
+.new-post {
+  width: 40rem;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #d8d8d8; }
+
+input {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  width: 100%; }
+
+textarea {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1em; }
+
+label {
+  display: block;
+  margin: 20px 0 10px; }
+
+.submit {
+  margin-top: 30px;
+  border-radius: 36px;
+  background: #FEE996;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  padding: 10px 16px;
+  letter-spacing: 2px; }
+  .submit:hover {
+    border: 1px solid #000; }
+
+.back {
+  margin-top: 30px;
+  border-radius: 36px;
+  background: #FEE996;
+  border: 0;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  padding: 10px 16px;
+  letter-spacing: 2px; }
+  .back:hover {
+    text-decoration: none;
+    border: 1px solid #000; }
+
+.error {
+  color: #ff0099;
+  margin: 10px 2px;
+  font-size: 0.8em;
+  font-weight: bold; }
 
 .btn-read {
   text-decoration: underline;
@@ -7325,6 +7449,19 @@ header {
   grid-column: 1 / -1;
   position: fixed;
   z-index: 100; }
+
+.section-post {
+  grid-column: center-start/col-end 6;
+  grid-row: 2/3;
+  margin: 5rem 0 10rem 0;
+  position: relative; }
+
+.section-main-blogs,
+.section-signup,
+.section-login {
+  margin-top: 5rem;
+  grid-column: center-start/center-end;
+  grid-row: 2/3; }
 
 .section-main {
   background-image: url(./img,svg/nomita2.png);
@@ -7373,8 +7510,25 @@ header {
   grid-row: 2 / 3;
   grid-column: 2 / -2; }
 
+.section-new-post {
+  margin-top: 5rem;
+  grid-column: center-start/center-end;
+  grid-row: 2/3; }
+
 .font-m {
   font-size: 1.3rem; }
+
+.font-b {
+  font-size: 1.8rem !important; }
+
+.font-s {
+  font-size: 1rem !important; }
+
+.w-30 {
+  width: 30%; }
+
+.w-65 {
+  width: 65%; }
 
 .dropdown:hover .dropdown-menu {
   display: block !important; }
@@ -7387,3 +7541,33 @@ header {
   width: 30rem; }
   #email:hover {
     border-bottom: 2px solid #000; }
+
+.blog-box {
+  background-color: #ececec;
+  border-radius: 10px;
+  position: relative; }
+
+.btn-comment {
+  transition: all .4s; }
+  .btn-comment:hover {
+    color: #76e25a;
+    font-style: italic; }
+
+.blog-img {
+  height: 30rem; }
+
+.text-grey {
+  color: #a7a7a7; }
+
+.drop-blog {
+  position: absolute;
+  right: 1rem;
+  top: 1rem; }
+
+.drop-blog-1 {
+  position: absolute;
+  right: 0rem;
+  top: 0; }
+
+.share-blog {
+  background-color: white; }

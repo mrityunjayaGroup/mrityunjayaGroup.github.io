@@ -44,8 +44,11 @@ var campground = mongoose.model('campground', {
 // });
 app.get('*', checkUser);
 app.get("/",function(req,res){
-    res.redirect("/campground");
-})
+    res.render("index.ejs");
+});
+app.get("/intro",function(req,res){
+    res.render("intro.ejs");
+});
 app.get("/campground", function(req,res){
     //get campround from db
     campground.find({},function(err,campgrounds){
