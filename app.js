@@ -126,5 +126,5 @@ app.delete("/campground/:id", requireAuth ,function(req,res){
 });
 app.use(authRoutes);
 
-app.listen(process.env.PORT || 3000, 
+app.listen(process.env.PORT || 3003, 
     () => console.log(""))
