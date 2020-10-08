@@ -7188,7 +7188,7 @@ body {
 .contain {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: 7rem max-content max-content max-content max-content max-content max-content max-content; }
+  grid-template-rows: 7rem minmax(min-content, 86vh) max-content max-content max-content max-content max-content max-content max-content; }
 
 .heading-primary {
   text-align: center;
@@ -7227,7 +7227,7 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1); }
 
 .para-small {
-  height: 7rem;
+  height: 6.5rem;
   overflow: hidden; }
 
 header {
